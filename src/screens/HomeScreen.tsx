@@ -118,7 +118,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ username = "User", onLogout }) 
   const showAllowDialog = (callback: () => void) => {
     Alert.alert(
       "Permission Required",
-      "App needs Camera & Location access to continue.",
+      "Please allow permissions to proceed.",
       [
         { text: "Cancel", style: "cancel" },
         { text: "Allow", onPress: callback },
